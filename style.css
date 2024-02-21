@@ -1,0 +1,206 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+
+}
+
+#first_topic {
+    position: relative;
+    top: 200px;
+    left: 170px;
+    font-weight: 600;
+    font-size: 50px;
+    letter-spacing: -.04cm;
+    color: #1e323f;
+    font-family: IBM Plex Sans;
+}
+b{
+    color: red;
+}
+
+#experience {
+    position: relative;
+    top: 230px;
+    left: 180px;
+    font-size: large;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+}
+.header{
+    position: fixed;
+    z-index: 1000;
+    
+}
+li{
+    display: inline; 
+    margin-right:90px;
+    position: relative;
+    top:20px;
+}
+
+.Back {
+    margin-left: 30px; 
+    left: 30px;
+    position: relative;
+    top: 4px;
+}
+
+
+#pointer {
+    position:absolute;
+    float: right;
+    top: -30px;
+    width:60%;
+    height: auto; 
+    right:2px;
+
+}
+
+#company {
+    position: absolute;
+    top: -24px; 
+    left: 150px;
+    border: 1px solid;
+    font-size: 18px;
+    padding: 12px 24px;
+    width: 145px;
+    border-radius: 10px;
+    text-align: center;
+    border-color: white;
+    font-family: sans-serif;
+    background-color: white;
+    font-weight: 500;
+    
+
+}
+#apply,#downApply{
+    border: 1px solid;
+    font-size: 20px;
+    padding: 12px 30px;
+    width: 100px;
+    border-radius: 10px;
+    text-align: center;
+    border-color: red;
+    font-family: sans-serif;
+    color: white;
+    background-color:rgb(255, 46,46);
+    font-weight: 500;
+
+}
+#apply{
+    position: absolute;
+    top: -25px;
+    left:300px;
+
+}
+#downApply{
+    position: relative;
+    top: 600px;
+    left: 170px;
+
+}
+#video{
+    position: relative;
+    top: 600px;
+    left: 190px; 
+    border: 1px solid;
+    font-size: 20px;
+    padding: 12px 24px;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+    border-color:red;
+    font-family: sans-serif;
+    color:darkgray;
+    background-color:white;
+    font-weight: 500;
+   
+}
+#nativeWords{
+    position: relative;
+    top: 580px;
+    left: 550px; 
+    font-size:40px;
+    font-weight: 700; 
+
+}
+.forever_twitter{
+   display: flex;
+   background-color: lightgrey;
+   width: 25%;  
+   border: 15px solid white;
+   padding: 80px;
+   margin: 50px;
+   border-radius: 25px; 
+    top: 500px;
+   font-size: 200x;
+   font-weight: 300;
+   word-spacing: 2x;
+    
+}
+.joy_twitter{
+    display: flex;
+    background-color: lightgrey;
+    width: 25%;  
+    border: 15px solid white;
+    padding: 80px;
+    margin: 50px; 
+    border-radius: 25px;
+     top: 500px;
+    font-size: 200x;
+    font-weight: 300;
+    word-spacing: 2x;
+    right: 50px;
+     
+ }
+ .tobi_twitter{
+    display:flex;
+    background-color: lightgrey;
+    width: 25%;  
+    border: 15px solid white;
+    padding: 80px;
+    margin: 50px;
+    border-radius: 25px;
+     top: 500px;
+    font-size: 200x;
+    font-weight: 300;
+    word-spacing: 2x;
+     
+ }
+.slideshow-container {
+    display:flex;
+    position: relative;
+    background:rgb(255,221,217);
+    Top: 600px;
+
+    box-sizing: content-box;
+
+  }
+.prev,.next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  transition: 0.6s ease;
+}
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
