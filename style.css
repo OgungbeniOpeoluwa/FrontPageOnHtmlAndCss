@@ -1,4 +1,4 @@
-
+@import "splidejs/splide/css";
 body{
     margin: 0;
     padding: 0;
@@ -8,7 +8,7 @@ body{
 
 #first_topic {
     position: relative;
-    top: 200px;
+    top: 230px;
     left: 170px;
     font-weight: 600;
     font-size: 50px;
@@ -22,7 +22,7 @@ b{
 
 #experience {
     position: relative;
-    top: 230px;
+    top: 270px;
     left: 180px;
     font-size: large;
     font-weight: 400;
@@ -32,20 +32,23 @@ b{
 .header{
     position: fixed;
     z-index: 1000;
+    top: 0;
+    width: 100%;
     
 }
 li{
     display: inline; 
     margin-right:90px;
     position: relative;
-    top:20px;
+    top:43px;
+    
 }
 
 .Back {
     margin-left: 30px; 
     left: 30px;
     position: relative;
-    top: 4px;
+    top: -5px;
 }
 
 
@@ -61,12 +64,12 @@ li{
 
 #company {
     position: absolute;
-    top: -24px; 
-    left: 150px;
-    border: 1px solid;
-    font-size: 18px;
-    padding: 12px 24px;
-    width: 145px;
+    top: -22px; 
+    left: 80px;
+    border: -1px solid;
+    font-size: 16px;
+    padding: 18px;
+    width: 170px;
     border-radius: 10px;
     text-align: center;
     border-color: white;
@@ -77,7 +80,7 @@ li{
 
 }
 #apply,#downApply{
-    border: 1px solid;
+    border: -1px solid;
     font-size: 20px;
     padding: 12px 30px;
     width: 100px;
@@ -92,8 +95,9 @@ li{
 }
 #apply{
     position: absolute;
-    top: -25px;
-    left:300px;
+    top: -18px;
+    left:200px;
+    width: 170px;
 
 }
 #downApply{
@@ -121,62 +125,54 @@ li{
 }
 #nativeWords{
     position: relative;
-    top: 580px;
+    top: 620px;
     left: 550px; 
     font-size:40px;
     font-weight: 700; 
 
 }
-.forever_twitter{
-   display: flex;
-   background-color: lightgrey;
-   width: 25%;  
-   border: 15px solid white;
-   padding: 80px;
-   margin: 50px;
-   border-radius: 25px; 
-    top: 500px;
-   font-size: 200x;
-   font-weight: 300;
-   word-spacing: 2x;
-    
-}
-.joy_twitter{
-    display: flex;
-    background-color: lightgrey;
-    width: 25%;  
-    border: 15px solid white;
-    padding: 80px;
-    margin: 50px; 
-    border-radius: 25px;
-     top: 500px;
-    font-size: 200x;
-    font-weight: 300;
-    word-spacing: 2x;
-    right: 50px;
-     
- }
- .tobi_twitter{
-    display:flex;
-    background-color: lightgrey;
-    width: 25%;  
-    border: 15px solid white;
-    padding: 80px;
-    margin: 50px;
-    border-radius: 25px;
-     top: 500px;
-    font-size: 200x;
-    font-weight: 300;
-    word-spacing: 2x;
-     
- }
-.slideshow-container {
-    display:flex;
-    position: relative;
-    background:rgb(255,221,217);
-    Top: 600px;
 
-    box-sizing: content-box;
+  .first_slide{ 
+    
+   width: 28%;  
+   padding: 10px; 
+   margin-left: 30px;  
+   border-radius: 10px;
+   margin-top: 2px;
+} 
+.second_slide{
+    width: 28%;  
+    padding: 10px;
+    border-radius: 10px; 
+     
+ }
+ .third_slide,.fourth_slide{
+    width: 28%; 
+    padding: 10px; 
+    border-radius: 10px;
+     
+ } 
+ .forever_twitter{
+    position: relative;
+    text-align: center;
+    top:25px;
+    border-radius: 10px;
+ }
+
+.slideshow-container {
+    position: relative;
+    background-image: url(https://res.cloudinary.com/semicolon-website/image/upload/v1637762892/website/assets/hero-backgrounds/try_k0wo5g.svg);
+     top: 700px;
+    height:530px; 
+    background-size: cover;
+    background-position: unset;
+    min-height: auto;
+    width: fit-content;
+    /* height: auto; */
+    padding-right: 3rem;
+    padding-left: 3rem;
+    
+
 
   }
 .prev,.next{
@@ -203,4 +199,99 @@ li{
     background-color: rgba(0,0,0,0.8);
     color: white;
   }
+  .covered{
+    position: relative;
+    top:800px;
+    text-align: center;
+    font-size: larger;
+    font-weight: 500;
+    font-family: IBM Plex San;
+  }
+  .market_section{
+    position: relative;
+    vertical-align: auto;
+    left: 200px
+  }
+  .line{
+    position: relative;
+    top:1px;
+  }
+  .logo_market{
+    position: relative;
+    top:20px
+  }
+  .topic{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 31px;
+    letter-spacing: -.02em;
+    color:#960c0c;
+    margin-top: 20px;
+  }
+  .text{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    color: #1e323f;
+
+  }
+  .sections{
+    display: flex;
+    position: relative;
+    top: 850px;
+  }
+  .real_world_experience{
+    position: relative;
+     left:300px;
+    }
+    .tution_payment{
+        position: relative;
+       left:330px;
+
+    }
+    .covered2{
+    display: flex;
+    position: relative;
+    top: 900px;
+        
+    }
+    .startUp{
+        position: relative;
+        left:430px;
+    }
+    .learn{
+     position: relative;
+       background-color: #DAEBFD;
+       top:900px;
+       height:105vh;
+    }
+    .image{
+        position: relative;
+      left:800px; 
+      object-fit: cover;
+      
+    }
+    .phrase{
+        position: relative;
+        font-size: 30px;
+        font-weight: 600;
+        margin: 80px;
+        top:150px
+    }
+    .win{
+        text-align: center;
+        position: relative;
+        margin-top: 1000px;
+        font-weight: 700;
+        font-size: 32px;
+        letter-spacing: -.04em;
+        color: #1e323f;
+        line-height: 40px;
+    }
+    .splide{
+      width: 2000px;
+      display: flex;
+
+    }
+  
   

@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
     <title>Document</title>
+
 </head>
 <body>
-     <div class="header">
+     <div class="header" id="navbar">
         <ul>
             <li><a  class ="Back"  href="home.html" style="text-decoration: none;">
             <img src="image\Untitled-removebg-preview.png",alt="back" width="150" height="25">
@@ -50,24 +56,250 @@
    <p id="nativeWords">What our Natives are saying...</p> </div>
 
    <div class="slideshow-container">
-   <div class="forever_twitter">
-    <p >Hi am foreverchild. My journey in Semicolon so far has been sweet.The lectures are very insightful with hands on practices. 
-    Always looking forward to the Friday hangouts filled with fun loving activities and games. We study hard and party hard with our very own
-     chief.</p>
+   
+    <div class="forever_twitter" >
+  <img class="first_slide" src="image\forever_image.jpg" alt="what our native are saying">
+  <img class="second_slide" src="image/jibola_image.jpg" alt="what our native are saying">
+  <img class="third_slide"  src="image/ozi_image.jpg" alt="what our native are saying">
    </div>
     
-     <div class="joy_twitter">
-    <p>Hi am foreverchild. My journey in Semicolon so far has been sweet.The lectures are very insightful with hands on practices. 
-        Always looking forward to the Friday hangouts filled with fun loving activities and games. We study hard and party hard with our very own
-         chief.</p>
+    <div class="forever_twitter">
+        <img class="first_slide" src="image/jibola_image.jpg" alt="what our native are saying">
+         <img class="second_slide" src="image/ozi_image.jpg" alt="what our native are saying">
+            <img class="third_slide" src="image/forever_image.jpg" alt="what our native are saying">
         </div>
-    <div class="tobi_twitter"> 
-    <p>Hi am foreverchild. My journey in Semicolon so far has been sweet.The lectures are very insightful with hands on practices. 
-            Always looking forward to the Friday hangouts filled with fun loving activities and games. We study hard and party hard with our very own
-             chief.</p>
-             </div>
-
+    <div class="forever_twitter"> 
+       <img class="first_slide" src="image/ozi_image.jpg" alt="what our native are saying">
+        <img class="second_slide" src="image/forever_image.jpg" alt="what our native are saying">
+        <img class="third_slide" src="image/jibola_image.jpg" alt="what our native are saying">    </div>
+    
+    
      <a class="prev" onclick="plusSlides(-1)">❮</a>
     <a class="next" onclick="plusSlides(1)">❯</a>
+
+   </div>
+
+      
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        
+        function showSlides(n) {
+          var i;
+        var slides = document.getElementsByClassName("forever_twitter");
+        
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+
+        
+        for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+              }
+          let random = Math.floor(Math.random() * 3) + 0
+
+           slides[random].style.display = "block"; 
+          setTimeout(showSlides, 5000);
+        
+        }
+        </script>
+
+        <div class="covered">
+            <h2>We Have Got You Covered</h2>
+        </div>
+        <div class="sections">
+        <div class="market_section">
+            <img class="logo_market" src="https://res.cloudinary.com/semicolon-website/image/upload/v1637762651/website/assets/coverList-logo/MarketReady_oiumso.svg"
+            alt="cover" style="height: 56px; width:56px"> 
+            <img class="line" src="https://res.cloudinary.com/semicolon-website/image/upload/v1637762651/website/assets/coverList-logo/line_hmrqp7.svg"
+            alt="line">
+        <h3 class="topic">Market Ready Curriculum</h3>
+       <p class ="text">We deliver an intensive one-year training with a<br/> 
+       practical curriculum that will take anyone from zero to<br/> 
+       skilled professional.</p>
+        </div>
+
+        <div class="real_world_experience">
+            <img class="logo_market" src="https://res.cloudinary.com/semicolon-website/image/upload/v1637762651/website/assets/coverList-logo/experience_fmo8et.svg" 
+            alt="Real world experience" style="height: 56px; width: 56px;">
+            <img class="line" src="https://res.cloudinary.com/semicolon-website/image/upload/v1637762651/website/assets/coverList-logo/line_hmrqp7.svg" 
+            alt="lines">
+
+            <h3 class="topic">Real Work Experience</h3>
+               <p class="text"> As you learn, you get to work on projects so that you <br/>
+               master the skills you need to thrive and gain <br/>
+               employment as a software engineer or in other tech-related roles.</p>
+        </div>
+
+        <div class="tution_payment">
+            <img src="https://res.cloudinary.com/semicolon-website/image/upload/v1637762652/website/assets/coverList-logo/Tuition_jgxeva.svg" 
+            alt="flexible tution payment">
+
+        <h3 class="topic" style="margin-top: .75rem; margin-bottom: .75rem;">Flexible Tuition Payment</h3>
+         <p class="text"> We offer flexible tuition fee options, so you have one<br/> 
+            less thing to worry about.</p>
+        </div>
+    </div>
+    
+    <div class="covered2">
+        <div class="market_section">
+            <img class="logo_market" src="https://res.cloudinary.com/semicolon-website/image/upload/v1637762652/website/assets/coverList-logo/SWiT_ypn93o.svg" 
+            alt="swit" style="height: 56px; width: 56px;">
+            <img src="https://res.cloudinary.com/semicolon-website/image/upload/v1637762651/website/assets/coverList-logo/line_hmrqp7.svg"
+            alt="line">
+
+            <h3 class="topic">SWiT</h3>
+            <p class="text"> Semicolon aims to increase gender balance<br> 
+                in technology across Africa. The Semicolon Women in <br>
+                Technology (SWiT) initiative supports opportunities <br>
+                for women in tech through programs, mentorship, <br>
+                and community networks. Read all about it here.</p>
+        </div>
+
+        <div class="real_world_experience">
+            <img class="logo_market" src="https://res.cloudinary.com/semicolon-website/image/upload/v1637762653/website/assets/company-logos/JobOpportunities_cx7uto.png"
+            alt="Access job opportunities" style="height:56px; width: 56px;">
+            <img src="https://res.cloudinary.com/semicolon-website/image/upload/v1637762651/website/assets/coverList-logo/line_hmrqp7.svg"
+            alt="line">
+
+            <h3 class="topic">Access Job Opportunities</h3>
+               <p class="text"> We have a pool of hiring partners and destinations<br>
+                that you can get deployed to, by the end of the <br>
+                programme.
+        </p>
+
+        </div>
+
+        <div class="startUp">
+            <img class="logo_market" src="https://res.cloudinary.com/semicolon-website/image/upload/v1637762651/website/assets/coverList-logo/Start-ups_iavwxa.jpg"
+            alt="StartUp" style="height: 56px; width: 56px;">
+
+        <h3 class="topic" style="margin-top: .75rem; margin-bottom: .75rem; margin-top: 20px;">StartUp</h3>
+        <p class="text" > Begin your entrepreneurial journey to develop your<br> 
+                idea to a Minimum Viable Product (MVP) as we <br/>
+                prepare you for investment opportunities.
+        </p></div>
+
+    </div>
+        <div class ="learn">
+            <p class="phrase">What you would learn</p>
+            
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel"style="margin-top: -125px; ">
+               
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="image\WhatToLearn\devop.jpg" alt="site Engineer" 
+                    style="margin-top: 100px; margin-left: 70px;">
+                    <img class ="image" src="image\DevSecOps.jpg" class="d-block w-100" alt="site" 
+                    style="height: 104vh; margin-left: -600px ; width: 60%;">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image\WhatToLearn\IMG-20240223-WA0018.jpg" alt="" style="margin-top: 175px; margin-left: 70px;">
+                    <img class="image" src="image\database_management.jpg" class="d-block w-100" alt="..." 
+                    style="margin-left: -600px; width: 60%; height: 104vh;" >
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image\WhatToLearn\IMG-20240223-WA0022.jpg" alt="" style="margin-top: 175px; margin-left: 70px;">
+                    <img  class="image" src="image\business_management.jpg" class="d-block w-100" alt="..."
+                    style="margin-left: -600px; width: 60%; height: 104vh;">
+                    
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image\WhatToLearn\IMG-20240223-WA0021.jpg" alt="" style="margin-top: 175px; margin-left: 70px;">
+                    <img class="image" src="image\design_thinking.jpg" class="d-block w-100" alt="..."
+                    style="margin-left: -600px; width: 60%; height: 104vh;">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image\WhatToLearn\IMG-20240223-WA0020.jpg" alt="" style="margin-top: 175px; margin-left: 70px;">
+                    <img class="image" src="image\data_analysis.jpg" class="d-block w-100" alt="..."
+                    style="margin-left: -600px; width: 60%; height: 104vh;">
+                  </div>
+                 
+                 
+                  <div class="carousel-item">
+                    <img src="image\WhatToLearn\engineer.jpg" alt="software Engineer" 
+                    style="margin-top:60px; margin-left: 70px;">
+                    <img class="image" src="image\software_engineer.jpg" class="d-block w-100" alt="..."
+                    style="height: 104vh; margin-left: -600px ; width: 60%;">
+                  </div>
+                  
+                  <div class="carousel-item">
+                    <img src="image\WhatToLearn\programming.jpg" alt="software Engineer" 
+                    style="margin-top: 30px; margin-left: 70px;">
+                    <img class="image" src="image\software_Programming.jpg" class="d-block w-100" alt="..."
+                    style="height: 104vh; margin-left: -600px ; width: 60%;">
+                  </div>
+                </div>
+                
+                
+                <button class="carousel-control-prev" type="arrow" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="arrow" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+        </div>
+
+        <div class="wins">
+            <h2 class="win">Our Wins</h2>
+<section class="splide">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide">
+        <img src="image\WhatToLearn\Mtn_hachaton.jpg" alt=""></li>
+      <li class="splide__slide">
+        <img src="image\WhatToLearn\scholarship.jpg" alt=""></li>
+      <li class="splide__slide">
+        <img src="image\WhatToLearn\hackcathon.jpg" alt=""></li>
+      <!-- <li class="splide__slide">
+        <img src="image\WhatToLearn\Data_Governance.jpg" alt=""></li> -->
+    </ul>
+  </div> 
+</section>
+
+</div>
+
+<script>
+        window.addEventListener('scroll', function() {
+    var navbar = document.getElementById("navbar");
+    var button1 = document.getElementById("company");
+    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+      navbar.style.backgroundColor = "white";
+      button1.style.backgroundColor = "rgb(254, 243, 243)";
+      navbar.style.height = "80px";
+    
+   
+    } else {
+      navbar.style.backgroundColor = "transparent";
+     
+    }
+  });</script>
+
+
+<script src="node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+            new Splide('.splide', {
+              type:'loop',
+              perPage: 3,
+              pagination:false,
+              gap: '10',
+              perMove:1,
+            }).mount();
+        });
+   </script>
+  
 </body>
+
+
 </html>
