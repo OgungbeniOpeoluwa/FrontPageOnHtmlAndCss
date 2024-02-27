@@ -3,6 +3,7 @@ body{
     margin: 0;
     padding: 0;
     width: fit-content;
+    overflow-x: hidden; 
 
 }
 
@@ -125,7 +126,7 @@ li{
 }
 #nativeWords{
     position: relative;
-    top: 620px;
+    top: 630px;
     left: 550px; 
     font-size:40px;
     font-weight: 700; 
@@ -162,15 +163,16 @@ li{
 .slideshow-container {
     position: relative;
     background-image: url(https://res.cloudinary.com/semicolon-website/image/upload/v1637762892/website/assets/hero-backgrounds/try_k0wo5g.svg);
-     top: 700px;
+     top: 630px;
     height:530px; 
     background-size: cover;
     background-position: unset;
     min-height: auto;
     width: fit-content;
-    /* height: auto; */
     padding-right: 3rem;
     padding-left: 3rem;
+    overflow: hidden;
+    width: 100%;
     
 
 
@@ -218,7 +220,7 @@ li{
   }
   .logo_market{
     position: relative;
-    top:20px
+    top:-4px
   }
   .topic{
     font-size: 24px;
@@ -253,6 +255,9 @@ li{
     display: flex;
     position: relative;
     top: 900px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #1e323f;
         
     }
     .startUp{
@@ -279,19 +284,53 @@ li{
         top:150px
     }
     .win{
-        text-align: center;
-        position: relative;
+        display: flex;
         margin-top: 1000px;
         font-weight: 700;
         font-size: 32px;
         letter-spacing: -.04em;
         color: #1e323f;
         line-height: 40px;
+        align-items: center;
+        justify-content: center;
     }
     .splide{
-      width: 2000px;
-      display: flex;
+      display:grid; 
+      grid-template-columns: auto auto auto;
+      padding: 35px;
+      overflow: hidden;
+      width: 100%;
+      margin-top: -45px;
+     
 
     }
-  
+   #carouselExample{
+    overflow: hidden;
+    width: 100%;
+   }
+
+   
+   .partners{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -.04em; 
+    color: #000;
+    justify-content: center;
+
+   }
+   .normal{
+    width: 12.716rem;
+    height: auto;
+    object-fit: contain;
+    margin-top: 100px;
+    
+   }
+   .Trusted{
+    display: flex;
+   }
+   
+   
   
